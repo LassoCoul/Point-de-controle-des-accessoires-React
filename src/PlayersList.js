@@ -12,7 +12,7 @@ function PlayersList() {
         {players.map((player, index) => (
           <Col key={index}>
             {/* utilisation de l'operateur spread */}
-            <Player player{...player} />
+            <Player {...player} />
           </Col>
         ))}
       </Row>
